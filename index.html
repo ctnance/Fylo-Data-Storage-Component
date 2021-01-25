@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  You’ve used 815 GB of your storage
+  <div id="storage-section">
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+    <div class="fylo-box main-box">
+      <img src="images/logo.svg" alt="fylo logo">
+
+      <div class="icons">
+        <div class="icon-box document-icon-box">
+          <img src="images/icon-document.svg" alt="document icon">
+        </div>
+        <div class="icon-box folder folder-icon-box">
+          <img src="images/icon-folder.svg" alt="folder icon">
+        </div>
+        <div class="icon-box upload-icon-box">
+          <img src="images/icon-upload.svg" alt="upload icon">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="storage-box main-box">
+
+      <p>You’ve used <strong>815 GB</strong> of your storage</p>
+
+      <div class="storage-meter">
+        <div class="meter">
+          <div class="progress-bar">
+            <div class="progress-indicator"></div>
+          </div>
+        </div>
+
+        <div class="storage-indicator">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+
+      <div class="remaining-storage-box">
+        <p>185 <span>GB LEFT</span></p>
+      </div>
+
+    </div>
+
+  </div>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/ctnance">Christopher Nance</a>.
   </div>
 </body>
+
 </html>

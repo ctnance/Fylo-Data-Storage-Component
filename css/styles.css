@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* HTML Tag Styles */
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background: url(../images/bg-mobile.png) no-repeat,
+    hsl(229, 57%, 11%);
+    background-size: cover;
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+/* Main Styles */
+
+#storage-section {
+    margin-top: 160px;
+}
+
+.main-box {
+    background-color: hsl(228, 56%, 26%);
+    width: 90%; /* MAKE DYNAMIC LATER  */
+    margin: 0 auto 1em;
+    border-radius: 1em;
+}
+
+/* Flexbox Styles */
+
+.icons {
+    display: flex;
+}
+
+.storage-indicator {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+/* Fylo Box Styles */
+
+.fylo-box {
+    border-top-right-radius: 8em;
+    padding: 3em;
+}
+
+.icons {
+    margin-top: 2em;
+}
+
+.icon-box {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: .75em;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.document-icon-box img {
+    margin: 12px 0;
+}
+
+.folder-icon-box img {
+    margin: 14px 0;
+}
+
+.upload-icon-box img {
+    margin: 16px 0;
+}
+
+/* Storage Box Styles */
+
+.storage-box {
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.meter {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1em;
+    height: 17px;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1em;
+    height: 80%;
+    width: 75%; /* 100% width needs fixed */
+    position: relative;
+    top: 10%;
+    margin: 0 3px;
+}
+
+.progress-indicator {
+    background-color: #FFF;
+    border-radius: 1em;
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+    margin-top: 2px;
+    float: right;
+}
+
+.storage-indicator {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.remaining-storage-box {
+    background-color: #FFF;
+    border-radius: 1em;
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 75%;
+}
+
+.remaining-storage-box p { 
+    color: hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 3em;
+    margin: 6px;
+}
+
+.remaining-storage-box span {
+    color: hsl(229, 7%, 55%);
+    font-size: 12px;
+    position: relative;
+    bottom: 8px;
+}
