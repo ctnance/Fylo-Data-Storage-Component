@@ -173,7 +173,6 @@ body {
     #storage-section {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
     }
 
@@ -188,6 +187,7 @@ body {
     .storage-box {
         width: 50%;
         text-align: left;
+        top: 21px;
     }
 
     .storage-indicator {
